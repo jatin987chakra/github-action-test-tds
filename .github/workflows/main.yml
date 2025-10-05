@@ -1,0 +1,19 @@
+name: Test Action with Email
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: 23f2001704@ds.study.iitm.ac.in
+        run: echo "This step contains my email address"
+        
+      - name: Regular step
+        run: echo "This is a regular step"
